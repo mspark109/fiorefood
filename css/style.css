@@ -211,6 +211,17 @@
     color: var(--light);
 }
 
+/* about */
+.about .introduce .position-relative {
+    text-align: center;
+}
+.about .introduce .position-relative img{
+    width: auto;
+    margin: 100px auto;
+}
+
+    
+
 
 /*** Section Title ***/
 .section-title {
@@ -471,35 +482,23 @@
     
 }
 
-input[type=radio]:checked {
-background-color: #f51d2c;
-color: #FFFFFF;
-}
-
-#ct_1,#ct_2,#ct_3 {
+a[class^="category__flex--ct_"] {
+    margin: 8px 6px;
+    display: inline-block;
     border-radius: 12px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-family: 'Nanum Gothic', sans-serif;
     font-weight: 600;
     transition: .5s;
+    width: 320px;
+    height: 55px;
+    line-height: 50px;
+    text-align: center;
+    padding-bottom: 10px;
+    border : 2px solid lightgray;
 }
 
-#ct_1::after {
-content: '👉🏻 카스텔라류 (Castella)';
-}
-#ct_2::after {
-content: '👉🏻 디저트류 (Desserts)';
-}
-#ct_3::after {
-content: '👉🏻 케이크류 (Cakes)';
-}
-.product .justify-content-center .col-lg-4 {
-    position: relative;
-}
-
-.product .justify-content-center .col-lg-4 .position-relative::before {
-    content: '';
-    display: inline-block;
-    position: relative;
-    height: 300px;
+a[class^="category__flex--ct_"]:hover {
+    background-color: #f51d2c;
+    color: #FFFFFF;
 }
