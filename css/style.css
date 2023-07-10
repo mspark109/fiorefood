@@ -570,3 +570,15 @@ a[class^="category__flex--ct_"]:hover {
 .certify .img-fluid {
     border: 2px solid lightgray;
 }
+
+
+@media (max-width: 991px) {
+    #nav-contact {
+        display: block;
+    }
+}
+@media (min-width: 992px) {
+    #nav-contact {
+        display: none;
+    }
+}
